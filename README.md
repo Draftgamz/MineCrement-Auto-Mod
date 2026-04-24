@@ -197,6 +197,7 @@ Save each block exactly as named inside:
 Mc.py
 Autoslot.py
 Autogg.py
+Config.txt
 The code is to be downloaded from the repo
 
 📝 Notes & Compatibility
