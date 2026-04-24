@@ -1,4 +1,5 @@
 # 📦 Minecrement Utilities (Requires Minescript)
+Minescript: https://modrinth.com/mod/minescript
 
 A suite of **Minescript-powered automation scripts** for Minecraft 1.21.x.
 
