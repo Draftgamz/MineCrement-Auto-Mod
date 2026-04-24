@@ -69,31 +69,6 @@ ERROR 9009
 
 with Minescript.
 
-3️⃣ Configure Minescript
-
-Open:
-
-%appdata%\.minecraft\minescript\config.txt
-
-Find the line:
-
-python=
-
-Replace it with:
-
-python="python"
-If scripts still fail:
-
-Run this in CMD:
-
-where python
-
-Then paste the full path like:
-
-python="C:\Path\To\python.exe"
-
-inside config.txt
-
 4️⃣ Disable Windows App Execution Aliases
 
 Go to:
