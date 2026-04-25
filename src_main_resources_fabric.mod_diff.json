@@ -1,0 +1,31 @@
+--- src/main/resources/fabric.mod.json (原始)
+
+
++++ src/main/resources/fabric.mod.json (修改后)
+{
+  "schemaVersion": 1,
+  "id": "minecrement-utilities",
+  "version": "${version}",
+  "name": "MineCrement Utilities",
+  "description": "A client-side utility mod featuring AutoSlot, AutoGG, and AutoReconnect with a custom settings GUI",
+  "authors": ["MineCrement"],
+  "contact": {
+    "homepage": "https://github.com/minecrement/utilities"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.minecrement.utilities.client.MineCrementUtilitiesClient"
+    ]
+  },
+  "mixins": [
+    "minecrement-utilities.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.105.0"
+  }
+}

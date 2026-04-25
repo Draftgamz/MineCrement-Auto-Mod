@@ -1,0 +1,5 @@
+--- settings.gradle (原始)
+
+
++++ settings.gradle (修改后)
+rootProject.name = 'minecrement-utilities'

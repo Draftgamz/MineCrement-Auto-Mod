@@ -1,0 +1,9 @@
+--- src/main/resources/assets/minecrement/lang/en_us.json (原始)
+
+
++++ src/main/resources/assets/minecrement/lang/en_us.json (修改后)
+{
+    "category.minecrement": "MineCrement Utilities",
+    "key.minecrement.pause": "Toggle Pause (J)",
+    "key.minecrement.settings": "Open Settings (O)"
+}

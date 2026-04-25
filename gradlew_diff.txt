@@ -1,0 +1,63 @@
+--- gradlew (原始)
+
+
++++ gradlew (修改后)
+     1	#!/bin/sh
+     2	
+     3	##############################################################################
+     4	# Gradle start up script for POSIX
+     5	##############################################################################
+     6	
+     7	# Attempt to set APP_HOME
+     8	APP_HOME=$( cd "${APP_HOME:-./}" && pwd -P ) || exit
+     9	
+    10	# Add default JVM options here
+    11	DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+    12	
+    13	# Use the maximum available, or set MAX_FD != -1 to use that value
+    14	MAX_FD=maximum
+    15	
+    16	warn () { echo "$*" ; } >&2
+    17	die () { echo ; echo "$*" ; echo ; exit 1 ; } >&2
+    18	
+    19	# OS specific support
+    20	cygwin=false
+    21	darwin=false
+    22	nonstop=false
+    23	case "$( uname )" in
+    24	  CYGWIN* ) cygwin=true ;;
+    25	  Darwin* ) darwin=true ;;
+    26	  NONSTOP* ) nonstop=true ;;
+    27	esac
+    28	
+    29	CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
+    30	
+    31	# Determine the Java command to use
+    32	if [ -n "$JAVA_HOME" ] ; then
+    33	    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
+    34	        JAVACMD=$JAVA_HOME/jre/sh/java
+    35	    else
+    36	        JAVACMD=$JAVA_HOME/bin/java
+    37	    fi
+    38	    if [ ! -x "$JAVACMD" ] ; then die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME" ; fi
+    39	else
+    40	    JAVACMD=java
+    41	    which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH."
+    42	fi
+    43	
+    44	# Increase maximum file descriptors if possible
+    45	if [ "$cygwin" = "false" ] && [ "$darwin" = "false" ] && [ "$nonstop" = "false" ] ; then
+    46	    MAX_FD_LIMIT=$( ulimit -H -n ) >& /dev/null
+    47	    if [ $? -eq 0 ] ; then
+    48	        if [ "$MAX_FD" = "maximum" ] || [ "$MAX_FD" = "max" ] ; then
+    49	            MAX_FD=$MAX_FD_LIMIT
+    50	        fi
+    51	        ulimit -n $MAX_FD >& /dev/null
+    52	    fi
+    53	fi
+    54	
+    55	# Collect all arguments for the java command
+    56	eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$APP_BASE_NAME\"" -classpath "\"$CLASSPATH\"" org.gradle.wrapper.GradleWrapperMain "$@"
+    57	
+    58	exec "$JAVACMD" "$@"
+    59	

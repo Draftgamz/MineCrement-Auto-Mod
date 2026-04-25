@@ -1,0 +1,14 @@
+--- src/main/resources/minecrement-utilities.mixins.json (原始)
+
+
++++ src/main/resources/minecrement-utilities.mixins.json (修改后)
+{
+  "required": true,
+  "package": "com.minecrement.utilities.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
